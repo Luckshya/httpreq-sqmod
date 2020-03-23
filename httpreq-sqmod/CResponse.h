@@ -22,7 +22,7 @@ extern std::unique_ptr< SqHTTP::EventManager > g_EventManager;
 namespace SqHTTP {
 class Response {
 public :
-	std::string regTag;
+	std::string reqTag;
 	std::string url;
 	std::string text;
 	unsigned int statusCode;

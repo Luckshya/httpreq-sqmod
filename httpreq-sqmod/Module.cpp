@@ -103,6 +103,7 @@ static void OnSquirrelTerminate()
 	Response::Clear();
 
 	g_EventManager.reset();
+	g_EventManager = nullptr;
 }
 
 /* ------------------------------------------------------------------------------------------------

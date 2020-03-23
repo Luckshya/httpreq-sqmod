@@ -142,7 +142,7 @@ void EventManager::PublishSQEvent()
 	}
 	catch (const Sqrat::Exception & e)
 	{
-		SqMod_LogErr("EventManager [%s] => Program error [%s]", "PublishSQEvent", e.what());
+		SqMod_LogErr("EventManager [%s] => Squirrel error [%s]", "PublishSQEvent", e.what());
 	}
 	catch (const std::exception & e)
 	{
@@ -156,7 +156,7 @@ void EventManager::PublishSQEvent()
 
 // --------------------------------------------------------------------------------------------
 // Whenever we want to emit that signal
-void EventManager::CallSQEvent(std::string regTag, std::string url, std::string text, unsigned int statusCode)
+void EventManager::CallSQEvent(std::string reqTag, std::string url, std::string text, unsigned int statusCode)
 {
 	try {
 		HSQUIRRELVM vm = DefaultVM::Get();
@@ -180,7 +180,8 @@ void EventManager::CallSQEvent(std::string regTag, std::string url, std::string 
 		// Push environment
 		sq_pushobject(vm, signalObj);
 
-		sq_pushstring(vm, regTag.c_str(), -1);
+		// Push parameters
+		sq_pushstring(vm, reqTag.c_str(), -1);
 		sq_pushstring(vm, url.c_str(), -1);
 		sq_pushinteger(vm, statusCode);
 		sq_pushstring(vm, text.c_str(), -1);
@@ -195,7 +196,7 @@ void EventManager::CallSQEvent(std::string regTag, std::string url, std::string 
 		}
 
 		// Pop the signal object, Emit function
-		sq_pop(vm, top);
+		sq_pop(vm, 2);
 	}
 	catch (const Sqrat::Exception & e)
 	{

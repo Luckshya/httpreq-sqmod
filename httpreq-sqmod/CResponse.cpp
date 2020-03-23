@@ -8,8 +8,8 @@ std::vector<Response> m_Responses;
 std::mutex m_ResponseGuard;
 
 // ------------------------------------------------------------------------------------------------
-Response::Response(std::string regTag, std::string url, std::string text, unsigned int statusCode) {
-	this->regTag = regTag;
+Response::Response(std::string reqTag, std::string url, std::string text, unsigned int statusCode) {
+	this->reqTag = reqTag;
 	this->url = url;
 	this->text = text;
 	this->statusCode = statusCode;
@@ -21,7 +21,7 @@ void Response::Update() {
 		std::lock_guard<std::mutex> lock(m_ResponseGuard);
 
 		for (auto it = m_Responses.begin(); it != m_Responses.end(); ++it) {
-			g_EventManager->CallSQEvent(it->regTag, it->url, it->text, it->statusCode);
+			g_EventManager->CallSQEvent(it->reqTag, it->url, it->text, it->statusCode);
 		}
 
 		m_Responses.clear();
