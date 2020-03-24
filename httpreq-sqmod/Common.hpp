@@ -13,7 +13,7 @@ namespace SqHTTP {
 */
 #define SQHTTP_NAME "Squirrel HTTP Module"
 #define SQHTTP_AUTHOR "Luckshya"
-#define SQHTTP_COPYRIGHT "None"
+#define SQHTTP_COPYRIGHT "Copyright (c) 2020 Luckshya"
 #define SQHTTP_HOST_NAME "SqModHTTPHost"
 #define SQHTTP_VERSION 001
 #define SQHTTP_VERSION_STR "0.0.1"
