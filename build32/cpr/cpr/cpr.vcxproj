@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{98949661-D9BE-396D-91C4-2C5DB2205BCF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>cpr</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cpr.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cpr-d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cpr.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cpr</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cpr.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cpr</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cpr.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cpr</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\opt\curl\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\opt\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CURL_STATICLIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CURL_STATICLIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\opt\curl\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\opt\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\opt\curl\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\opt\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\opt\curl\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\opt\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CURL_STATICLIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CURL_STATICLIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\opt\curl\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\opt\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\opt\curl\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\opt\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\opt\curl\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\opt\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CURL_STATICLIB;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CURL_STATICLIB;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\opt\curl\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\opt\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\opt\curl\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\opt\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\opt\curl\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\opt\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CURL_STATICLIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CURL_STATICLIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\opt\curl\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\opt\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\opt\curl\include;C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\opt\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\cpr\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Luckshya/source/repos/httpreq-sqmod/cpr/cpr/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Luckshya/source/repos/httpreq-sqmod -BC:/Users/Luckshya/source/repos/httpreq-sqmod/build32 --check-stamp-file C:/Users/Luckshya/source/repos/httpreq-sqmod/build32/cpr/cpr/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\cpr\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Luckshya/source/repos/httpreq-sqmod/cpr/cpr/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Luckshya/source/repos/httpreq-sqmod -BC:/Users/Luckshya/source/repos/httpreq-sqmod/build32 --check-stamp-file C:/Users/Luckshya/source/repos/httpreq-sqmod/build32/cpr/cpr/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\cpr\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Luckshya/source/repos/httpreq-sqmod/cpr/cpr/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Luckshya/source/repos/httpreq-sqmod -BC:/Users/Luckshya/source/repos/httpreq-sqmod/build32 --check-stamp-file C:/Users/Luckshya/source/repos/httpreq-sqmod/build32/cpr/cpr/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\cpr\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Luckshya/source/repos/httpreq-sqmod/cpr/cpr/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Luckshya/source/repos/httpreq-sqmod -BC:/Users/Luckshya/source/repos/httpreq-sqmod/build32 --check-stamp-file C:/Users/Luckshya/source/repos/httpreq-sqmod/build32/cpr/cpr/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\cpr\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\cpr\auth.cpp" />
+    <ClCompile Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\cpr\cookies.cpp" />
+    <ClCompile Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\cpr\cprtypes.cpp" />
+    <ClCompile Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\cpr\digest.cpp" />
+    <ClCompile Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\cpr\error.cpp" />
+    <ClCompile Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\cpr\multipart.cpp" />
+    <ClCompile Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\cpr\parameters.cpp" />
+    <ClCompile Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\cpr\payload.cpp" />
+    <ClCompile Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\cpr\proxies.cpp" />
+    <ClCompile Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\cpr\session.cpp" />
+    <ClCompile Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\cpr\timeout.cpp" />
+    <ClCompile Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\cpr\util.cpp" />
+    <ClCompile Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\cpr\ssl_options.cpp" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\api.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\auth.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\body.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\cookies.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\cpr.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\cprtypes.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\curlholder.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\defines.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\digest.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\error.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\max_redirects.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\multipart.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\parameters.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\payload.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\proxies.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\response.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\session.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\timeout.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\util.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\ssl_options.h" />
+    <ClInclude Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\include\cpr\verbose.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\ZERO_CHECK.vcxproj">
+      <Project>{46AFDF38-22ED-33F3-AAC8-47F2377E2588}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\opt\curl\lib\libcurl.vcxproj">
+      <Project>{682F48B5-A9A2-34D2-BC85-E53646EEED2A}</Project>
+      <Name>libcurl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

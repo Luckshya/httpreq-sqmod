@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\CMakeFiles\74982d69d2e93d925af8852b835d9985\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\cpr\opt\curl\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr\opt\curl\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{ACE90A1E-9026-3592-A7F4-2ED6A719BAFD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

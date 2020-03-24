@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr-download\CMakeFiles\d15bfc5667177486953c1a2b73af273b\cpr-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr-download\CMakeFiles\d15bfc5667177486953c1a2b73af273b\cpr-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr-download\CMakeFiles\d15bfc5667177486953c1a2b73af273b\cpr-download-skip-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr-download\CMakeFiles\d15bfc5667177486953c1a2b73af273b\cpr-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr-download\CMakeFiles\d15bfc5667177486953c1a2b73af273b\cpr-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr-download\CMakeFiles\d15bfc5667177486953c1a2b73af273b\cpr-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr-download\CMakeFiles\d15bfc5667177486953c1a2b73af273b\cpr-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr-download\CMakeFiles\d15bfc5667177486953c1a2b73af273b\cpr-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr-download\CMakeFiles\8e8a0f323f0c6f9af3d4dbd1eb84e849\cpr-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr-download\CMakeFiles\6256704d378a6f879ed5d66a18ae8f71\cpr-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr-download\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Luckshya\source\repos\httpreq-sqmod\build32\cpr-download\CMakeFiles\cpr-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1759C83C-57FC-3793-A3C0-77DFAD047A05}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

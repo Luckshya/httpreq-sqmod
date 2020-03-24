@@ -215,16 +215,8 @@ void EventManager::CallSQEvent(std::string reqTag, std::string url, std::string 
 // --------------------------------------------------------------------------------------------
 void EventManager::ParseError(HSQUIRRELVM vm)
 {
-	// Get the last error
-	sq_getlasterror(vm);
-
-	CCStr error = nullptr;
-
-	// Put it in the variable
-	sq_getstring(vm, -1, &error);
-
 	// throw exception
-	SQTHROW(vm, error);
+	SQTHROW(vm, LastErrorString(vm));
 }
 
 // --------------------------------------------------------------------------------------------
