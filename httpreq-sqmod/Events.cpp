@@ -215,7 +215,7 @@ void EventManager::CallSQEvent(std::string reqTag, std::string url, std::string 
 // --------------------------------------------------------------------------------------------
 void EventManager::ParseError(HSQUIRRELVM vm)
 {
-	// throw exception
+	// throw exception with the last error string
 	SQTHROW(vm, LastErrorString(vm));
 }
 
