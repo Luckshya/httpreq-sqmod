@@ -1,14 +1,13 @@
 // ------------------------------------------------------------------------------------------------
 #include "Common.hpp"
-#include "Utility.inl"
 #include "CRequest.h"
 #include "CResponse.h"
 #include "Misc.h"
 #include "Events.h"
 
 // ------------------------------------------------------------------------------------------------
-using namespace SqMod;
 using namespace SqHTTP;
+using namespace Sqrat;
 
 // ------------------------------------------------------------------------------------------------
 std::unique_ptr< EventManager > g_EventManager;
@@ -16,6 +15,8 @@ std::unique_ptr< EventManager > g_EventManager;
 // ------------------------------------------------------------------------------------------------
 namespace SqHTTP
 {
+typedef const char * CCStr;
+
 /* ------------------------------------------------------------------------------------------------
  * Register the module API under the obtained virtual machine.
 */
@@ -59,12 +60,6 @@ static bool OnSquirrelLoad()
 		// Unable to proceed!
 		return false;
 	}
-	// Prevent common null objects from using dead virtual machines
-	NullObject() = Object();
-	NullTable() = Table();
-	NullArray() = Array();
-	NullLightObj() = LightObj();
-	NullFunction() = Function();
 
 	// Create and publish our event
 	g_EventManager = std::unique_ptr< EventManager >(new EventManager());
@@ -91,12 +86,6 @@ static bool OnSquirrelLoad()
 static void OnSquirrelTerminate()
 {
 	OutputMessage("Terminating: %s", SQHTTP_NAME);
-	// Release null objects just in case
-	NullObject().Release();
-	NullTable().Release();
-	NullArray().Release();
-	NullLightObj().Release();
-	NullFunction().ReleaseGently();
 
 	// Release script resources...
 	clearFuture();
