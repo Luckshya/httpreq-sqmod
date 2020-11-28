@@ -37,7 +37,7 @@ endif()
 target_compile_definitions(${CPR_LIBRARIES} PUBLIC CURL_STATICLIB)
 
 # Link to base libraries
-target_link_libraries(SqHTTP VCMP SquirrelAPI Sqrat SqSDK ${CPR_LIBRARIES})
+target_link_libraries(SqHTTP SqAddSDK ${CPR_LIBRARIES})
 
 # Don't prefix the module binary.
 set_target_properties(SqHTTP PROPERTIES PREFIX "")

@@ -5,6 +5,7 @@ project(httpreq-sqmod)
 option(FORCE_32BIT_BIN "Create a 32-bit executable binary if the compiler defaults to 64-bit." OFF)
 option(FORCE_DEBUG_BIN "Create debug binary." OFF)
 option(PLUGIN_DEVEL "Plugin development mode." ON)
+set(BUILD_SHARED_LIBS OFF)
 
 if(FORCE_DEBUG_BIN)
 	set(CMAKE_BUILD_TYPE Debug)
@@ -25,9 +26,17 @@ include(ExternalProject)
 include(buildtools/cmake/DownloadProject.cmake)
 
 download_project(
+		PROJ           sdk
+		GIT_REPOSITORY https://github.com/VCMP-SqMod/ModuleSDK.git
+		GIT_TAG        master
+		SOURCE_DIR     ${PROJECT_SOURCE_DIR}/sdk
+		UPDATE_DISCONNECTED 1
+)
+
+download_project(
 		PROJ           cpr
 		GIT_REPOSITORY https://github.com/whoshuu/cpr.git
-		GIT_TAG        b748095
+		GIT_TAG        e627e47
 		SOURCE_DIR     ${PROJECT_SOURCE_DIR}/cpr
 		UPDATE_DISCONNECTED 1
 )
@@ -58,12 +67,6 @@ if(NOT DEFINED USE_SYSTEM_CURL AND ${CMAKE_SYSTEM_NAME} MATCHES "Linux")
 	set(USE_SYSTEM_CURL ON CACHE BOOL "")
 endif()
 
-# Include VCMP library
-add_subdirectory(vcmp)
-# Include Squirrel library
-add_subdirectory(squirrel)
-# Include Squat library
-add_subdirectory(sqrat)
 # Include SDK library
 add_subdirectory(sdk)
 
